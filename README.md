@@ -18,9 +18,6 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 The following are available for stringifying arbitrary objects
 
-* Stringify.stringify/1
-* Stringify.inspect/1
-* :i.stringify/1
 * :i.inspect/1
 * :i.i/1
 
