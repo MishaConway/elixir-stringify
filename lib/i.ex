@@ -7,7 +7,11 @@ defmodule :i do
     stringify item
   end
 
-  def stringify(item) do
-    Stringify.stringify item
+  defp stringify(item) do
+    opts = struct(Inspect.Opts)
+    item
+    |> Inspect.Algebra.to_doc(opts)
+    |> Inspect.Algebra.format(opts.width)
+    |> to_string
   end
 end
